@@ -1,0 +1,23 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Streamlit specific (keeps your local secrets safe!)
+.streamlit/secrets.toml
+
+# Excel and CSV Data files (Optional: Prevents you from uploading raw user/business data to Github)
+*.csv
+*.xlsx
+*.xls
+*.pdf
+
+# OS generated files
+.DS_Store
+Thumbs.db
