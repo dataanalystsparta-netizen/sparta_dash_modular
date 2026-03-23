@@ -8,9 +8,9 @@ from data_loader import fetch_data
 from utils import map_quality, map_portal, calculate_standardized_revenue
 
 # Placeholder imports for tabs (we will build these next)
-# from tabs.tab_1_team import render_team_tab
-# from tabs.tab_2_agent import render_agent_tab
-# from tabs.tab_3_finance import render_finance_tab
+from tabs.tab_1_team import render_team_tab
+from tabs.tab_2_agent import render_agent_tab
+from tabs.tab_3_finance import render_finance_tab
 
 # --- CONFIG & STYLING ---
 st.set_page_config(page_title="Sparta Master Dashboard", layout="wide")
@@ -50,15 +50,15 @@ try:
 
     with tab1:
         st.write("Team Tab placeholder")
-        # render_team_tab(f1, f2, all_advisors, formatted_live, start_date, end_date)
+        render_team_tab(f1, f2, all_advisors, formatted_live, start_date, end_date)
 
     with tab2:
         st.write("Agent Tab placeholder")
-        # render_agent_tab(f1, f2, all_advisors, formatted_live)
+        render_agent_tab(f1, f2, all_advisors, formatted_live)
 
     with tab3:
         st.write("Finance Tab placeholder")
-        # render_finance_tab(f2, formatted_live)
+        render_finance_tab(f2, formatted_live)
 
 except Exception as e:
     st.error(f"Error: {e}")
