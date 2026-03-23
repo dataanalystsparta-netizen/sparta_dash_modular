@@ -9,3 +9,4 @@ numpy
 plotly
 xlsxwriter
 fpdf
+streamlit
